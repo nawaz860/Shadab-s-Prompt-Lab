@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Panel - 50% */
+.left-panel {
+    flex: 1;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e2e8f0;
+    padding: 40px;
+}
+
+.logo-container {
+    width: 85%; /* This makes the logo take 85% of the left half width */
+    max-width: 700px;
+}
+
+/* Right Panel - 50% */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    overflow-y: auto;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-bottom: 1px solid #edf2f7;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #4338ca;
+}
+
+/* Display Content */
+.display-area {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background: #fff;
+}
+
+.card img, .card video {
+    width: 100%;
+    display: block;
+    background: #000;
+}
+
+.prompt-text {
+    padding: 20px;
+    background: #f8fafc;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+    border-left: 5px solid #6a5cff;
+    white-space: pre-wrap;
+}
+
+.placeholder {
+    text-align: center;
+    margin-top: 100px;
+    color: #94a3b8;
+}

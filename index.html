@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadab’s Prompt Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+                <svg viewBox="0 0 420 120" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#6a5cff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00e5ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="20" rx="18" ry="18" width="80" height="80" fill="url(#grad)"/>
+                    <path d="M35 50 h30 v20 h-18 l-6 8 v-8 h-6 z" fill="white"/>
+                    <circle cx="50" cy="40" r="3" fill="white"/>
+                    <circle cx="60" cy="34" r="2" fill="white"/>
+                    <text x="110" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#1f2937">Shadab’s</text>
+                    <text x="110" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500" fill="#4f46e5">Prompt Lab</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="sticky-header">
+                <h2>Explore Prompts</h2>
+                <div class="menu">
+                    <button class="btn" onclick="renderGallery('video')">Video Prompts</button>
+                    <button class="btn" onclick="renderGallery('image')">Image Prompts</button>
+                </div>
+            </div>
+            <div id="display-area" class="display-area">
+                <p class="placeholder">Select a category to view your 100+ AI creations</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
